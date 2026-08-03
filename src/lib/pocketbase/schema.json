@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T21:22:23.546Z",
+  "generatedAt": "2026-08-03T21:26:24.696Z",
   "collections": [
     {
       "name": "users",
@@ -29,24 +29,118 @@
           "type": "autodate",
           "required": false,
           "system": false,
-          "autodateTriggers": [
-            "onCreate"
-          ]
+          "autodateTriggers": ["onCreate"]
         },
         {
           "name": "updated",
           "type": "autodate",
           "required": false,
           "system": false,
-          "autodateTriggers": [
-            "onCreate",
-            "onUpdate"
-          ]
+          "autodateTriggers": ["onCreate", "onUpdate"]
         }
       ],
       "indexes": [
         "CREATE UNIQUE INDEX `idx_tokenKey__pb_users_auth_` ON `users` (`tokenKey`)",
         "CREATE UNIQUE INDEX `idx_email__pb_users_auth_` ON `users` (`email`) WHERE `email` != ''"
+      ]
+    },
+    {
+      "name": "projects",
+      "type": "base",
+      "apiRules": {
+        "list": "",
+        "view": "",
+        "create": null,
+        "update": null,
+        "delete": null
+      },
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "required": true,
+          "system": false
+        },
+        {
+          "name": "slug",
+          "type": "text",
+          "required": true,
+          "system": false
+        },
+        {
+          "name": "category",
+          "type": "select",
+          "required": true,
+          "system": false,
+          "selectValues": ["2D", "3D", "Games", "Concept", "Graphic Design"]
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "required": true,
+          "system": false
+        },
+        {
+          "name": "full_description",
+          "type": "text",
+          "required": true,
+          "system": false
+        },
+        {
+          "name": "tools",
+          "type": "select",
+          "required": false,
+          "system": false,
+          "selectValues": [
+            "Blender",
+            "ZBrush",
+            "Substance Painter",
+            "Substance Designer",
+            "3DCoat",
+            "Clip Studio Paint",
+            "Photoshop",
+            "Illustrator",
+            "Unity",
+            "Unreal Engine 5",
+            "Figma"
+          ]
+        },
+        {
+          "name": "cover_image",
+          "type": "file",
+          "required": false,
+          "system": false
+        },
+        {
+          "name": "gallery",
+          "type": "file",
+          "required": false,
+          "system": false
+        },
+        {
+          "name": "order",
+          "type": "number",
+          "required": false,
+          "system": false
+        },
+        {
+          "name": "created",
+          "type": "autodate",
+          "required": false,
+          "system": false,
+          "autodateTriggers": ["onCreate"]
+        },
+        {
+          "name": "updated",
+          "type": "autodate",
+          "required": false,
+          "system": false,
+          "autodateTriggers": ["onCreate", "onUpdate"]
+        }
+      ],
+      "indexes": [
+        "CREATE INDEX idx_projects_category ON projects (category)",
+        "CREATE UNIQUE INDEX idx_projects_slug ON projects (slug)"
       ]
     }
   ]
