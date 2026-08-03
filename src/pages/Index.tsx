@@ -862,19 +862,6 @@ export default function Index() {
             </a>
 
             <a
-              href="mailto:tgcs20047@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#111113] p-6 rounded-lg border border-[#2B2B30] hover:border-[#D90429] transition-all text-center space-y-3 group"
-            >
-              <div className="w-12 h-12 rounded-full bg-[#D90429]/10 text-[#D90429] flex items-center justify-center mx-auto group-hover:bg-[#D90429] group-hover:text-white transition-colors">
-                <Mail className="w-6 h-6" />
-              </div>
-              <h4 className="font-display text-xl text-white uppercase">Gmail</h4>
-              <p className="font-mono text-xs text-[#9CA3AF]">tgcs20047@gmail.com</p>
-            </a>
-
-            <a
               href="https://www.linkedin.com/in/tiago-kov/"
               target="_blank"
               rel="noopener noreferrer"
