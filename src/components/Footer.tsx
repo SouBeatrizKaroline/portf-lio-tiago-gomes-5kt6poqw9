@@ -84,7 +84,7 @@ export function Footer() {
             <ul className="space-y-2 text-xs font-mono">
               <li>
                 <a
-                  href="https://artstation.com"
+                  href="https://www.artstation.com/kov_gol"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
@@ -94,7 +94,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://sketchfab.com"
+                  href="https://sketchfab.com/KOv.artStudios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
@@ -104,7 +104,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://behance.net"
+                  href="https://www.behance.net/kovgol/projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
@@ -114,7 +114,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/channel/UC4EvKbc156w2GLQacKA13ZA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
@@ -124,7 +124,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitch.tv"
+                  href="https://www.twitch.tv/kov_artstudio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
@@ -134,12 +134,72 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/kov.art.studio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#D90429] transition-colors"
                 >
-                  Instagram @kov_art
+                  Instagram @kov.art.studio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tiago-kov/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://fab.com/s/de421d8baac3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  FAB (Epic Games)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://cara.app/1969"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  Cara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://br.pinterest.com/KovGol/esposi%C3%A7%C3%B5es-kov/?invite_code=30f34192932c4c44a670b1078f810516&sender=953355952277511851"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  Pinterest
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/Tiago_kov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  X (Twitter)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linktr.ee/KOv.art"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#D90429] transition-colors"
+                >
+                  Linktree
                 </a>
               </li>
             </ul>

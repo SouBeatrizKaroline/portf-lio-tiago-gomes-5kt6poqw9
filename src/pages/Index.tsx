@@ -25,7 +25,11 @@ import {
   Wrench,
   Shield,
   Award,
+  ShoppingBag,
+  Camera,
+  Link2,
 } from 'lucide-react'
+import { XIcon, PinterestIcon } from '@/components/BrandIcons'
 import { getProjects } from '@/services/projects'
 import { Project } from '@/types/project'
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider'
@@ -742,12 +746,33 @@ export default function Index() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              { name: 'YouTube', url: 'https://youtube.com', icon: Youtube },
-              { name: 'Twitch', url: 'https://twitch.tv', icon: Tv },
-              { name: 'Instagram', url: 'https://instagram.com', icon: Instagram },
-              { name: 'ArtStation', url: 'https://artstation.com', icon: Palette },
-              { name: 'Sketchfab', url: 'https://sketchfab.com', icon: Box },
-              { name: 'Behance', url: 'https://behance.net', icon: ExternalLink },
+              {
+                name: 'YouTube',
+                url: 'https://www.youtube.com/channel/UC4EvKbc156w2GLQacKA13ZA',
+                icon: Youtube,
+              },
+              { name: 'Twitch', url: 'https://www.twitch.tv/kov_artstudio', icon: Tv },
+              {
+                name: 'Instagram',
+                url: 'https://www.instagram.com/kov.art.studio',
+                icon: Instagram,
+              },
+              { name: 'ArtStation', url: 'https://www.artstation.com/kov_gol', icon: Palette },
+              { name: 'Sketchfab', url: 'https://sketchfab.com/KOv.artStudios', icon: Box },
+              {
+                name: 'Behance',
+                url: 'https://www.behance.net/kovgol/projects',
+                icon: ExternalLink,
+              },
+              { name: 'FAB', url: 'https://fab.com/s/de421d8baac3', icon: ShoppingBag },
+              { name: 'Cara', url: 'https://cara.app/1969', icon: Camera },
+              {
+                name: 'Pinterest',
+                url: 'https://br.pinterest.com/KovGol/esposi%C3%A7%C3%B5es-kov/?invite_code=30f34192932c4c44a670b1078f810516&sender=953355952277511851',
+                icon: PinterestIcon,
+              },
+              { name: 'X', url: 'https://x.com/Tiago_kov', icon: XIcon },
+              { name: 'Linktree', url: 'https://linktr.ee/KOv.art', icon: Link2 },
             ].map((social, idx) => (
               <a
                 key={idx}
@@ -811,7 +836,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511991467419"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#111113] p-6 rounded-lg border border-[#2B2B30] hover:border-[#D90429] transition-all text-center space-y-3 group"
@@ -820,22 +845,37 @@ export default function Index() {
                 <MessageSquare className="w-6 h-6" />
               </div>
               <h4 className="font-display text-xl text-white uppercase">WhatsApp</h4>
-              <p className="font-mono text-xs text-[#9CA3AF]">Mensagem Direta</p>
+              <p className="font-mono text-xs text-[#9CA3AF]">+55 11 99146-7419</p>
             </a>
 
             <a
-              href="mailto:contato@scarletstudio.art"
+              href="mailto:tiago.gomes@scarletstudio.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#111113] p-6 rounded-lg border border-[#2B2B30] hover:border-[#D90429] transition-all text-center space-y-3 group"
             >
               <div className="w-12 h-12 rounded-full bg-[#D90429]/10 text-[#D90429] flex items-center justify-center mx-auto group-hover:bg-[#D90429] group-hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
               </div>
               <h4 className="font-display text-xl text-white uppercase">E-mail</h4>
-              <p className="font-mono text-xs text-[#9CA3AF]">contato@scarletstudio.art</p>
+              <p className="font-mono text-xs text-[#9CA3AF]">tiago.gomes@scarletstudio.com.br</p>
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="mailto:tgcs20047@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#111113] p-6 rounded-lg border border-[#2B2B30] hover:border-[#D90429] transition-all text-center space-y-3 group"
+            >
+              <div className="w-12 h-12 rounded-full bg-[#D90429]/10 text-[#D90429] flex items-center justify-center mx-auto group-hover:bg-[#D90429] group-hover:text-white transition-colors">
+                <Mail className="w-6 h-6" />
+              </div>
+              <h4 className="font-display text-xl text-white uppercase">Gmail</h4>
+              <p className="font-mono text-xs text-[#9CA3AF]">tgcs20047@gmail.com</p>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/tiago-kov/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#111113] p-6 rounded-lg border border-[#2B2B30] hover:border-[#D90429] transition-all text-center space-y-3 group"
