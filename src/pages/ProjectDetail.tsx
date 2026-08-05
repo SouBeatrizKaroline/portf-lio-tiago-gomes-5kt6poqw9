@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, Link, useNavigate } from 'react'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Box, ExternalLink, Layers, Sparkles, Image as ImageIcon } from 'lucide-react'
 import { getProjectById } from '@/services/projects'
 import { Project } from '@/types/project'
